@@ -6,7 +6,8 @@
 
     function __construct()
     {
-      $this->string = "MVC + PHP = Awesome, click here!";
+      $this->string = "The string has been loaded through the template.";
+      $this->template = 'index.php';
     }
   }
 ?>

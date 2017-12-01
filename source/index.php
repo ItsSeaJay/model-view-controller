@@ -6,12 +6,16 @@
 
   $model = new Model();
   $controller = new Controller($model);
-  $view = new View($controller, $model);
-
-  if (isset($_GET['action']) && !empty($_GET['action']))
-  {
-    $controller->{$_GET['action']}();
-  }
-
-  echo $view->output();
+  $view = new View($model);
 ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, MVC!</title>
+  </head>
+  <body>
+    <?php echo $data; ?>
+  </body>
+</html>
